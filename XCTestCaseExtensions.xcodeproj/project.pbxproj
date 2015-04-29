@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAB8E48C1AF112E3001B8BEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB8E48B1AF112E3001B8BEA /* Foundation.framework */; };
 		FACB25091A1362FD00B2FC4F /* XCTestCaseExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = FACB25081A1362FD00B2FC4F /* XCTestCaseExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FACB250F1A1362FD00B2FC4F /* XCTestCaseExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACB25031A1362FD00B2FC4F /* XCTestCaseExtensions.framework */; };
 		FACB25161A1362FD00B2FC4F /* XCTestCaseExtensionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FACB25151A1362FD00B2FC4F /* XCTestCaseExtensionsTests.m */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FAB8E48B1AF112E3001B8BEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FACB25031A1362FD00B2FC4F /* XCTestCaseExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCTestCaseExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACB25071A1362FD00B2FC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FACB25081A1362FD00B2FC4F /* XCTestCaseExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCTestCaseExtensions.h; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB8E48C1AF112E3001B8BEA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,11 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FAB8E48D1AF1133E001B8BEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAB8E48B1AF112E3001B8BEA /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FACB24F91A1362FD00B2FC4F = {
 			isa = PBXGroup;
 			children = (
 				FACB25051A1362FD00B2FC4F /* XCTestCaseExtensions */,
 				FACB25121A1362FD00B2FC4F /* XCTestCaseExtensionsTests */,
+				FAB8E48D1AF1133E001B8BEA /* Frameworks */,
 				FACB25041A1362FD00B2FC4F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -339,6 +351,7 @@
 				);
 				INFOPLIST_FILE = XCTestCaseExtensions/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(SRCROOT)/XCTestCaseExtensions/module.map";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -360,6 +373,7 @@
 				);
 				INFOPLIST_FILE = XCTestCaseExtensions/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(SRCROOT)/XCTestCaseExtensions/module.map";
 				PRODUCT_NAME = "$(TARGET_NAME)";
